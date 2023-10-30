@@ -1,55 +1,1457 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Grammar4ua</title>
-</head>
-<body>
-    <header class="header"></header>
-    <main class="main">
-        <div class="intro">
-            <div class="header-burger burger">
-                <span class="burger-line burger-line-first"></span>
-                <span class="burger-line burger-line-second"></span>
-                <span class="burger-line burger-line-third"></span>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <title>Grammar4ua</title>
+    </head>
+    <body>
+        <header class="header"></header>
+        <main class="main">
+            <div class="intro">
+                <header class="header">
+                    <nav class="header-nav">
+                        <div class="header-nav-close">
+                            <hr class="header-nav-close-line">
+                        </div>
+                        <ul class="header-list">
+                            <li class="header-item">
+                                <a href="#a1" class="header-link js-scroll">A1</a>
+                            </li>
+                            <li class="header-item">
+                                <a href="#a2" class="header-link js-scroll">A2</a>
+                            </li>
+                            <li class="header-item">
+                                <a href="#b1" class="header-link js-scroll">B1</a>
+                            </li>
+                            <li class="header-item">
+                                <a href="#b2" class="header-link js-scroll">B2</a>
+                            </li>
+                        </ul>
+                        <hr class="header-nav-hr-decoration">
+                    </nav>
+                    <div class="header-burger burger">
+                        <span class="burger-line burger-line-first"></span>
+                        <span class="burger-line burger-line-second"></span>
+                        <span class="burger-line burger-line-third"></span>
+                    </div>
+                </header>
+                
+                <div class="intro-wrap">
+                    <div class="intro-grid-wrap">
+                        <img src="./img/waves_img.jpg" alt="Waves image" class="img-intro">
+                        <h1 class="text-intro-p text-intro" id="text-intro-p-left">
+                            ПОДІЛИЛОСЯ ЖИТТЯ
+                        </h1>
+                        <h1 class="text-intro-p text-intro" id="text-intro-p-right">
+                            НА PAST ТА PRESENT?
+                        </h1>
+                    </div>
+                    
+                    <img class="arrow-down" src="./img/arrow-intro.svg" alt="Arrow down">
+                </div>
             </div>
-            <!--<img src="./img/waves_img.jpg" alt="Waves image" class="img-intro">-->
-            <div class="text-intro"> 
-                <h1 class="text-intro-p">
-                    ПОДІЛИЛОСЯ ЖИТТЯ
-                </h1>
-                <h1 class="text-intro-p" id="text-intro-p-right">
-                    НА PAST ТА PRESENT?
-                </h1>
-            </div>
-            <div class="arrow-down"></div>
-        </div>
-        <div class="victory">
+            <div class="victory">
 
-            <div class="victory-wrap">
-                <div class="victory-moving-lines">
-                    <div class="victory-moving-lines-line">
+                <div class="victory-wrap">
+                    <div class="victory-moving-lines">
+                        <div class="victory-moving-lines-line" id="victory-moving-lines-container-1"> 
+                            <div class="victory-moving-lines-text">simple  continuous  perfect</div>
+                        </div>
+                        <div class="victory-moving-lines-line" id="victory-moving-lines-container-2"> 
+                            <div class="victory-moving-lines-text">conditionals  gerund  articles</div>
+                        </div>
 
                     </div>
-                    <div class="victory-moving-lines-line">
-
+                    <div class="victory-text">
+                        <h2 class="victory-h2">
+                            <!--ЧЕКАЄШ НА <span class="victory-text-blue">FUTURE</span> ПЕРЕМОГУ?-->
+                            <span class="victory-text-wrapper">
+                                <span class="victory-letters">ЧЕКАЄШ НА FUTURE ПЕРЕМОГУ?</span>
+                            </span>
+                        </h2>
+                        <p class="victory-desc">
+                            А ти знаєш, як сказати про це <span class="victory-text-beige">in English</span>? <span class="victory-text-beige">How to</span> попросити ЄС <span class="victory-text-beige">for</span> нові системи ППО? Чи <span class="victory-text-beige">to write</span> допис в інстаграмі <span class="victory-text-beige">about</span> другий день блекауту <span class="victory-text-beige">in</span> твоєму місті?
+                        </p>
                     </div>
                 </div>
-                <div class="victory-text">
-                    <h2 class="victory-text-heading">
-                        ЧЕКАЄШ НА <span class="victory-text-blue">FUTURE</span> ПЕРЕМОГУ?
+
+            </div>
+
+            <div class="levels">
+                <hr class="levels-hr-black">
+                <div class="levels-text">
+                    <h2 class="levels-h2">
+                        Пропонуємо тобі ознайомитись з англійською граматикою за допомогою зручних конспектів
                     </h2>
-                    <p class="victory-text-desc">
-                        А ти знаєш, як сказати про це <span class="victory-text-beige">in English</span>? <span class="victory-text-beige">How to</span> попросити ЄС <span class="victory-text-beige">for</span> нові системи ППО? Чи <span class="victory-text-beige">to write</span> допис в інстаграмі <span class="victory-text-beige">about</span> другий день блекауту <span class="victory-text-beige">in</span> твоєму місті?
-                    </p>
+                    <p class="levels-desc">Адже ми знаємо наскільки складно її вивчати</p>
+                </div>
+                <div class="levels-cards">
+                    <div class="levels-card">
+                        <a href="#" class="levels-card-hover"><img src="./img/levels-card-1.jpg" alt="A1 Picture" class="levels-card-img"></a>
+                    </div>
+                    <div class="levels-card">
+                        <a href="#" class="levels-card-hover"><img src="./img/levels-card-2.jpg" alt="A2 Picture" class="levels-card-img"></a>
+                    </div>
+                    <div class="levels-card">
+                        <a href="#" class="levels-card-hover"><img src="./img/levels-card-3.jpg" alt="B1 Picture" class="levels-card-img"></a>
+                    </div>
+                    <div class="levels-card">
+                        <a href="#" class="levels-card-hover"><img src="./img/levels-card-4.jpg" alt="B2 Picture" class="levels-card-img"></a>
+                    </div>
+                </div>
+                <!--<div class="amount-triangle-top-wrap">
+                    <textarea name="" id="" cols="30" rows="10" class="amount-triangle-top-holder" placeholder="dcklcnvdklvn"></textarea>
+                    <div class="amount-triangle-top"></div>
+                </div>-->
+                <img src="./img/amount-hrs-top.svg" alt="Divider Lines" class="amount-hrs-top">
+                <img src="./img/amount-triangle-top.svg" alt="Divider" class="amount-triangle-top">
+            </div>
+
+            <div class="amount">
+                <!--<div class="amount-triangle-top"></div>-->
+                <!--<hr class="amount-hr-blue">-->
+
+                <div class="amount-container">
+                    <div class="amount-text">
+                        <h2 class="amount-h2">
+                            <span class="amount-text-wrapper">
+                                <span class="line line1"></span>
+                                <span class="amount-letters">27 ТЕМ ТА 12 ЧАСІВ</span>
+                              </span>
+                        </h2>
+                        <p class="amount-desc">
+                            структурованих по рівнях, допоможуть вивчити або повторити незрозумілі англійські правила на певному етапі навчання
+                        </p>
+                    </div>
+
+                    <div class="amount-photo-wrap">
+                        <img src="./img/amount-img.jpg" alt="Skyscrapers Photo" class="amount-photo">
+                    </div>
                 </div>
             </div>
 
-        </div>
-    </main>
-    
-</body>
+            <div class="a1" id="a1">
+                <img src="./img/amount-hrs-bottom.svg" alt="Divider Lines" class="amount-hrs-bottom">
+                <img src="./img/amount-triangle-bottom.svg" alt="Divider" class="amount-triangle-bottom">
+                <!--<div class="amount-triangle-bottom-wrap"><div class="amount-triangle-bottom"></div></div>-->
+                <h2 class="a1-h2">A1 - BEGINNER</h2>
+                <div class="cards-wrap">
+
+                    <div class="card">
+                        <a href="./present-simple.html" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-1-front-wrap">
+                                    <div class="card-1-front">
+                                        <p class="card-text">
+                                            Present Simple
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-1-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Present Simple
+                                        </p>
+                                        <h2 class="card-1-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Жити теперішнім
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-2-front">
+                                    <p class="card-text">
+                                        Present Continuous
+                                    </p>
+                                </div>
+                                <div class="card-2-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Present Cont.
+                                        </p>
+                                        <h2 class="card-2-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Медитації - бути в моменті
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-1-front-wrap">
+                                    <div class="card-1-front">
+                                        <p class="card-text">
+                                            Past Simple
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-1-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Past Simple
+                                        </p>
+                                        <h2 class="card-1-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Відпустити минуле
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-2-front">
+                                    <p class="card-text">
+                                        Future Simple
+                                    </p>
+                                </div>
+                                <div class="card-2-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Future Simple
+                                        </p>
+                                        <h2 class="card-2-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Тривожність через майбутнє
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-2-front">
+                                    <p class="card-text">
+                                        Articles
+                                    </p>
+                                </div>
+                                <div class="card-2-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Articles
+                                        </p>
+                                        <h2 class="card-2-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            ????
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-1-front-wrap">
+                                    <div class="card-1-front">
+                                        <p class="card-text">
+                                            Possessive adjectives
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-1-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Possessive adjectives
+                                        </p>
+                                        <h2 class="card-1-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Ідентифікація у суспільстві
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-2-front">
+                                    <p class="card-text">
+                                        Countable & uncountable nouns, quantifiers
+                                    </p>
+                                </div>
+                                <div class="card-2-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Uncountable nouns, quantifiers
+                                        </p>
+                                        <h2 class="card-2-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Де знайти мотивацію
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-1-front-wrap">
+                                    <div class="card-1-front">
+                                        <p class="card-text">
+                                            Whose, possessive‘s
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-1-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Whose, possessive's
+                                        </p>
+                                        <h2 class="card-1-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Проактивна позиція: Ч. 1
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card" id="a1-cards-secondtolast">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-2-front">
+                                    <p class="card-text">
+                                        Zero conditional
+                                    </p>
+                                </div>
+                                <div class="card-2-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Zero conditional
+                                        </p>
+                                        <h2 class="card-2-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            ???
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card" id="a1-cards-last">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-1-front-wrap">
+                                    <div class="card-1-front">
+                                        <p class="card-text">
+                                            Prepositions of time and place
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-1-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Prepositions of time and place
+                                        </p>
+                                        <h2 class="card-1-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Покращити концентрацію
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <img src="./img/a1-vls-bottom.svg" alt="Divider Lines" class="a1-b1-vls-bottom">
+            </div>
+
+            <div class="a2" id="a2">
+                <h2 class="a2-h2">A2 - PRE-INTERMEDIATE</h2>
+                <div class="cards-wrap">
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-1-front-wrap">
+                                    <div class="card-1-front">
+                                        <p class="card-text">
+                                            Present Perfect
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-1-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Present Perfect
+                                        </p>
+                                        <h2 class="card-1-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Перфекціонізм
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card" id="a2-cards-second">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-2-front">
+                                    <p class="card-text">
+                                        Past Continuous
+                                    </p>
+                                </div>
+                                <div class="card-2-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Past Continuous
+                                        </p>
+                                        <h2 class="card-2-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Румінації
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-2-front">
+                                    <p class="card-text">
+                                        Past Perfect
+                                    </p>
+                                </div>
+                                <div class="card-2-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Past Perfect
+                                        </p>
+                                        <h2 class="card-2-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            ????
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-1-front-wrap">
+                                    <div class="card-1-front">
+                                        <p class="card-text">
+                                            Present Cont. for future arrangements
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-1-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Present Cont. for future arrangements
+                                        </p>
+                                        <h2 class="card-1-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Планування в умовах невизначеності
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-2-front">
+                                    <p class="card-text">
+                                        Modal verbs
+                                    </p>
+                                </div>
+                                <div class="card-2-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Modal verbs
+                                        </p>
+                                        <h2 class="card-2-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            ????
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-1-front-wrap">
+                                    <div class="card-1-front">
+                                        <p class="card-text">
+                                            Used to, didn’t use to
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-1-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Used to, didn’t use to
+                                        </p>
+                                        <h2 class="card-1-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Ідентифікація у суспільстві
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-1-front-wrap">
+                                    <div class="card-1-front">
+                                        <p class="card-text">
+                                            First conditional
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-1-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            First conditional
+                                        </p>
+                                        <h2 class="card-1-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Де знайти мотивацію
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-2-front">
+                                    <p class="card-text">
+                                        Second conditional
+                                    </p>
+                                </div>
+                                <div class="card-2-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Second conditional
+                                        </p>
+                                        <h2 class="card-2-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Проактивна позиція: Ч. 1
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-1-front-wrap">
+                                    <div class="card-1-front">
+                                        <p class="card-text">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-1-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                        <h2 class="card-1-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            ???
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card" id="a2-cards-last">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-2-front">
+                                    <p class="card-text">
+                                        Comparative and superlative form
+                                    </p>
+                                </div>
+                                <div class="card-2-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Comparative and superlative form
+                                        </p>
+                                        <h2 class="card-2-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Покращити концентрацію
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="b1" id="b1">
+                <hr class="b1-hr-top">
+                <h2 class="b1-h2">B1 - INTERMEDIATE</h2>
+
+                <div class="cards-wrap-b1">
+
+                    <div class="cards-space"></div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-1-front-wrap">
+                                    <div class="card-1-front">
+                                        <p class="card-text">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-1-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                        <h2 class="card-1-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            ???
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="cards-space"></div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-1-front-wrap">
+                                    <div class="card-1-front">
+                                        <p class="card-text">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-1-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                        <h2 class="card-1-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            ???
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-2-front">
+                                    <p class="card-text">
+                                        Comparative and superlative form
+                                    </p>
+                                </div>
+                                <div class="card-2-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Comparative and superlative form
+                                        </p>
+                                        <h2 class="card-2-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Покращити концентрацію
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="cards-space"></div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-2-front">
+                                    <p class="card-text">
+                                        Comparative and superlative form
+                                    </p>
+                                </div>
+                                <div class="card-2-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Comparative and superlative form
+                                        </p>
+                                        <h2 class="card-2-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Покращити концентрацію
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="cards-space"></div>
+
+                    <div class="cards-space"></div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-1-front-wrap">
+                                    <div class="card-1-front">
+                                        <p class="card-text">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-1-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                        <h2 class="card-1-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            ???
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="cards-space"></div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-1-front-wrap">
+                                    <div class="card-1-front">
+                                        <p class="card-text">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-1-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                        <h2 class="card-1-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            ???
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-2-front">
+                                    <p class="card-text">
+                                        Comparative and superlative form
+                                    </p>
+                                </div>
+                                <div class="card-2-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Comparative and superlative form
+                                        </p>
+                                        <h2 class="card-2-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Покращити концентрацію
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="cards-space"></div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-2-front">
+                                    <p class="card-text">
+                                        Comparative and superlative form
+                                    </p>
+                                </div>
+                                <div class="card-2-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Comparative and superlative form
+                                        </p>
+                                        <h2 class="card-2-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Покращити концентрацію
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="cards-space"></div>
+
+                    <div class="cards-space"></div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-1-front-wrap">
+                                    <div class="card-1-front">
+                                        <p class="card-text">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-1-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                        <h2 class="card-1-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            ???
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="cards-space"></div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-1-front-wrap">
+                                    <div class="card-1-front">
+                                        <p class="card-text">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-1-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                        <h2 class="card-1-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            ???
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <img src="./img/a1-vls-bottom.svg" alt="Divider Lines" class="a1-vls-bottom">
+
+            </div>
+
+            <div class="b2" id="b2">
+                <div class="b2-h2">
+                    B2 - UPPER-INTERMEDIATE
+                </div>
+                
+                <div class="cards-wrap-b2">
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-1-front-wrap">
+                                    <div class="card-1-front">
+                                        <p class="card-text">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-1-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                        <h2 class="card-1-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            ???
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="cards-space"></div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-1-front-wrap">
+                                    <div class="card-1-front">
+                                        <p class="card-text">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-1-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                        <h2 class="card-1-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            ???
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="cards-space"></div>
+
+                    <div class="cards-space"></div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-2-front">
+                                    <p class="card-text">
+                                        Comparative and superlative form
+                                    </p>
+                                </div>
+                                <div class="card-2-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Comparative and superlative form
+                                        </p>
+                                        <h2 class="card-2-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Покращити концентрацію
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="cards-space"></div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-2-front">
+                                    <p class="card-text">
+                                        Comparative and superlative form
+                                    </p>
+                                </div>
+                                <div class="card-2-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Comparative and superlative form
+                                        </p>
+                                        <h2 class="card-2-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Покращити концентрацію
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-1-front-wrap">
+                                    <div class="card-1-front">
+                                        <p class="card-text">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-1-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                        <h2 class="card-1-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            ???
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="cards-space"></div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-1-front-wrap">
+                                    <div class="card-1-front">
+                                        <p class="card-text">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-1-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                        <h2 class="card-1-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            ???
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="cards-space"></div>
+
+                    <div class="cards-space"></div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-2-front">
+                                    <p class="card-text">
+                                        Comparative and superlative form
+                                    </p>
+                                </div>
+                                <div class="card-2-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Comparative and superlative form
+                                        </p>
+                                        <h2 class="card-2-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Покращити концентрацію
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="cards-space"></div>
+
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-2-front">
+                                    <p class="card-text">
+                                        Comparative and superlative form
+                                    </p>
+                                </div>
+                                <div class="card-2-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Comparative and superlative form
+                                        </p>
+                                        <h2 class="card-2-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            Покращити концентрацію
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <hr class="b2-hr-thin" id="b2-hr-thin-first">
+                <hr class="b2-hr-thin">
+
+                <div class="card-container">
+                    <div class="card">
+                        <a href="#!" class="card-link">
+                            <div class="card-wrap">
+                                <div class="card-1-front-wrap">
+                                    <div class="card-1-front">
+                                        <p class="card-text">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-1-back">
+                                    <hr class="card-back-hr">
+                                    <div class="card-back-text">
+                                        <p class="card-back-text-p">
+                                            Infinitives, gerunds, verb + to
+                                        </p>
+                                        <h2 class="card-1-back-text-h2">
+                                            Або
+                                        </h2>
+                                        <p class="card-back-text-p">
+                                            ???
+                                        </p>
+                                        <p class="card-back-text-watch">
+                                            Переглянути
+                                        </p>
+                                    </div>
+                                    <hr class="card-back-hr">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <hr class="b2-hr-thin" id="b2-hr-thin-first">
+                <hr class="b2-hr-thin">
+
+                <img src="./img/footer_divider.svg" alt="Footer Divider" class="footer_divider">
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-text">
+                <h2 class="footer-h2">
+                    цей проєкт реалізовано в межах науково-дослідницької роботи ман
+                </h2>
+                <p class="footer-desc">
+                    віділення “Інформаційних технологій”, секція “Комп’ютерна інженерія. Програмна інженерія”
+                </p>
+            </div>
+            <div class="footer-contact">
+                <p class="footer-contact-rights">@2023 All rights reserved</p>
+                <div class="footer-contact-socials">
+                    <a href="mailto:skalijsofia2@gmail.com" target="_blank" class="footer-contact-socials-gmail">Gmail</a>
+                    <a href="https://www.instagram.com/ebsjdo/" target="_blank" class="footer-contact-socials-instagram">Instagram</a>
+                    <a href="https://github.com/skalii-sofiia" target="_blank" class="footer-contact-socials-github">GitHub</a>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="./scriptJs.js"></script>
+    </body>
 </html>

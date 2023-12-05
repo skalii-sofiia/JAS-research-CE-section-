@@ -196,7 +196,8 @@ legend {
     z-index: 999;
 }
 .header-active{
-    background: #FFF;
+    background: #1B1A19;
+    height: 12dvh;
 }
 .header-nav{
     display: none;
@@ -541,6 +542,8 @@ to {
     display: flex;
     flex-flow: row nowrap;
     margin-bottom: 40px;
+    transform: rotate(-12deg);
+    width: 100%;
 }
 .levels-card{
     display: flex;

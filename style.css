@@ -511,6 +511,7 @@ to {
     background: url(./img/bg-levels.jpg) no-repeat center fixed;
     background-size: cover;
     padding: 31px 0 0 0;
+    overflow: hidden;
 }
 .levels-hr-black{
     border: 15px solid #1B1A19;
@@ -541,9 +542,8 @@ to {
 .levels-cards{
     display: flex;
     flex-flow: row nowrap;
-    margin-bottom: 40px;
-    transform: rotate(-12deg);
-    width: 100%;
+    transform: rotate(-12deg) translateY(25%) translateX(-5%);
+    width: 109%;
 }
 .levels-card{
     display: flex;
@@ -1066,7 +1066,7 @@ to {
 /* info intro starts*/
 
 .info-intro{
-    padding: 25px 0 10px 0;
+    padding-bottom: 10px;
     height: 100dvh;
 }
 .info-burger-line{
@@ -1101,6 +1101,15 @@ to {
     line-height: 110px;
     margin-top: 70px;
 }
+.ps-info-text-intro{
+    color: #1B1A19;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: clamp(2rem, 6vw + 1rem, 5rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110px;
+    margin-top: 70px;
+}
 #info-text-intro-p-left{
     grid-column: 1 / 3;
     grid-row: 1 / 2;
@@ -1130,6 +1139,11 @@ to {
     font-weight: 700;
     line-height: 60px;
 }
+.youtube-video{
+    margin: 3% 0;
+    display: flex;
+    justify-content: center;
+}
 .info-info-hr{
     border: 1px solid rgb(27, 26, 25, 0.6);
 }
@@ -1148,7 +1162,7 @@ to {
     margin-top: 60px;
 }
 .info-info-p-wrap{
-    margin-top: 40px;
+    margin: 40px 0 40px;
 }
 .info-info-p{
     font-size: 25px;
@@ -1453,6 +1467,9 @@ to {
         font-size: 20px;
         line-height: 25px;
     }
+    .levels-card-img{
+        border: 10px solid #FFF;
+    }
 
     /*levels ends*/
 
@@ -1531,6 +1548,9 @@ to {
    }
    .footer-contact-socials-github, .footer-contact-socials-instagram{
         margin-left: 10%;
+    }
+    .levels-card-img{
+        border: 5px solid #FFF;
     }
 }
 

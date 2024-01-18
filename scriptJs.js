@@ -1,16 +1,3 @@
-// var preload = document.createElement('div');
-
-// preload.className = "preloader";
-// preload.innerHTML = '<div class="b-ico-preloader"></div><div class="spinner"></div>';
-// document.body.appendChild(preload);
-
-// window.addEventListener('load', function() {
-//   //Uncomment to fade preloader after document load
-//   preload.className +=  ' fade';
-//   setTimeout(function(){
-//     preload.style.display = 'none';
-//   },600);
-// })
 (function () { //код запускається при відкритті сторінки
   const header = document.querySelector('.header');
   window.onscroll = () => {
@@ -23,27 +10,15 @@
   };
 }());
 
-// burger handler
-
-(function (){
-  const burgerItem = document.querySelector('.burger');
-  const menu = document.querySelector('.header-nav');
-  const menuCloseItem = document.querySelector('.header-nav-close');
-  const menuLinks = document.querySelectorAll('.header-link');
-  burgerItem.addEventListener('click', () => {
-      menu.classList.add('header-nav-active');
-  });
-  menuCloseItem.addEventListener('click', () => {
-      menu.classList.remove('header-nav-active');
-  });
-  if (window.innerWidth <= 767) {
-      for (let i = 0; i < menuLinks.length; i += 1){
-          menuLinks[i].addEventListener('click', () => {
-              menu.classList.remove('header-nav-active');
-          });
-      }
-  }
-}());
+//header menu
+const menu = document.querySelector('.hidden'); 
+const menuButton = document.querySelector('.header-burger'); 
+ 
+function handleMenuButton(){ 
+    menu.classList.toggle('hidden'); 
+} 
+ 
+menuButton.addEventListener('click', handleMenuButton);
 
 //Scroll to anchors
 (function () {
@@ -85,7 +60,7 @@
 }());
 
 //for victory-h2
-var textWrapper = document.querySelector('.victory-h2 .victory-letters');
+/*var textWrapper = document.querySelector('.victory-h2 .victory-letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='victory-letter'>$&</span>");
 
 anime.timeline({loop: true})
@@ -134,4 +109,25 @@ textWrapper1.innerHTML = textWrapper1.textContent.replace(/([^\x00-\x80]|\w)/g, 
       duration: 1000,
       easing: "easeOutExpo",
       delay: 1000
-    });
+    }); */
+
+
+// for a1-beginner
+
+var textWrapper = document.querySelector('.h2-animated .letters-h2-animated');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter-h2-animated'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.h2-animated .letter-h2-animated',
+    scale: [0, 1],
+    duration: 1500,
+    elasticity: 600,
+    delay: (el, i) => 45 * (i+1)
+  }).add({
+    targets: '.h2-animated',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });

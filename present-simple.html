@@ -10,26 +10,53 @@
 <body>
     <main class="info-main">
         <div class="info-intro">
-            <div class="header-burger burger">
-                <span class="info-burger-line burger-line-first"></span>
-                <span class="info-burger-line burger-line-second"></span>
-                <span class="info-burger-line burger-line-third"></span>
-            </div>
-            <div class="info-intro-hr-wrap-1">
-                <hr class="info-intro-hr">
+            <header class="header info-header">
+                <nav class="header-nav hidden">
+                    <div class="header-nav-close">
+                        <hr class="header-nav-close-line">
+                    </div>
+                    <ul class="header-list">
+                        <li class="header-item">
+                            <a href="./index.html" class="header-link js-scroll">Home</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="./index.html/#a1" class="header-link js-scroll">A1</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="#a2" class="header-link js-scroll">A2</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="#b1" class="header-link js-scroll">B1</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="#b2" class="header-link js-scroll">B2</a>
+                        </li>
+                    </ul>
+                    <hr class="header-nav-hr-decoration">
+                </nav>
+                <button type="button" class="header-burger burger">
+                    <img src="./img/burger-bar-dark.png" alt="Burger menu">
+                </button>
+            </header>
+        
+            <div class="info-intro-text">
+                <div class="info-intro-hr-wrap-1">
+                    <hr class="info-intro-hr">
+                </div>
+                
+                <div class="info-intro-grid-wrap">
+                    <h1 class="info-text-intro-p info-text-intro" id="info-text-intro-p-left">
+                        PRESENT SIMPLE
+                    </h1>
+                    <h1 class="info-text-intro-p info-text-intro" id="info-text-intro-p-right">
+                        ЖИТИ ТЕПЕРІШНІМ
+                    </h1>
+                </div>
+                <div class="info-intro-hr-wrap-2">
+                    <hr class="info-intro-hr">
+                </div>
             </div>
             
-            <div class="info-intro-grid-wrap">
-                <h1 class="info-text-intro-p info-text-intro" id="info-text-intro-p-left">
-                    PRESENT SIMPLE
-                </h1>
-                <h1 class="info-text-intro-p info-text-intro" id="info-text-intro-p-right">
-                    ЖИТИ ТЕПЕРІШНІМ
-                </h1>
-            </div>
-            <div class="info-intro-hr-wrap-2">
-                <hr class="info-intro-hr">
-            </div>
             
         </div>
         <div class="info-info-wrap">
@@ -235,7 +262,7 @@
             </p>
         </div>
         <div class="footer-contact">
-            <p class="footer-contact-rights">@2023 All rights reserved</p>
+            <p class="footer-contact-rights">@2024 All rights reserved</p>
             <div class="footer-contact-socials">
                 <a href="mailto:skalijsofia2@gmail.com" target="_blank" class="footer-contact-socials-gmail">Gmail</a>
                 <a href="https://www.instagram.com/ebsjdo/" target="_blank" class="footer-contact-socials-instagram">Instagram</a>
@@ -243,5 +270,6 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="./scriptJs.js"></script>
 </body>
 </html>

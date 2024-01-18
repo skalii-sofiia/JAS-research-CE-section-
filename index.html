@@ -6,14 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-        <title>Grammar4ua</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/H.jpg" />
+
+        <title>HealthyEnglish</title>
     </head>
     <body>
-        <header class="header"></header>
         <main class="main">
             <div class="intro">
                 <header class="header">
-                    <nav class="header-nav">
+                    <nav class="header-nav hidden">
                         <div class="header-nav-close">
                             <hr class="header-nav-close-line">
                         </div>
@@ -33,11 +34,9 @@
                         </ul>
                         <hr class="header-nav-hr-decoration">
                     </nav>
-                    <div class="header-burger burger">
-                        <span class="burger-line burger-line-first"></span>
-                        <span class="burger-line burger-line-second"></span>
-                        <span class="burger-line burger-line-third"></span>
-                    </div>
+                    <button type="button" class="header-burger burger">
+                        <img src="./img/burger-bar.png" alt="Burger menu">
+                    </button>
                 </header>
                 
                 <div class="intro-wrap">
@@ -103,10 +102,7 @@
                         <a href="#b2" class="levels-card-hover"><img src="./img/levels-card-4.jpg" alt="B2 Picture" class="levels-card-img"></a>
                     </div>
                 </div>
-                <!--<div class="amount-triangle-top-wrap">
-                    <textarea name="" id="" cols="30" rows="10" class="amount-triangle-top-holder" placeholder="dcklcnvdklvn"></textarea>
-                    <div class="amount-triangle-top"></div>
-                </div>-->
+                
                 <img src="./img/amount-hrs-top.svg" alt="Divider Lines" class="amount-hrs-top">
                 <img src="./img/amount-triangle-top.svg" alt="Divider" class="amount-triangle-top">
             </div>
@@ -138,7 +134,11 @@
                 <img src="./img/amount-hrs-bottom.svg" alt="Divider Lines" class="amount-hrs-bottom">
                 <img src="./img/amount-triangle-bottom.svg" alt="Divider" class="amount-triangle-bottom">
                 <!--<div class="amount-triangle-bottom-wrap"><div class="amount-triangle-bottom"></div></div>-->
-                <h2 class="a1-h2">A1 - BEGINNER</h2>
+                <h2 class="h2-animated a1-h2">
+                    <span class="text-wrapper-h2-animated">
+                        <span class="letters-h2-animated">A1 - BEGINNER</span>
+                    </span>
+                </h2>
                 <div class="cards-wrap">
 
                     <div class="card">
@@ -457,7 +457,11 @@
             </div>
 
             <div class="a2" id="a2">
-                <h2 class="a2-h2">A2 - PRE-INTERMEDIATE</h2>
+                <h2 class="h2-animated a2-h2">
+                    <span class="text-wrapper-h2-animated">
+                        <span class="letters-h2-animated">A2 - PRE-INTERMEDIATE</span>
+                    </span>
+                </h2>
                 <div class="cards-wrap">
 
                     <div class="card">
@@ -775,7 +779,11 @@
 
             <div class="b1" id="b1">
                 <hr class="b1-hr-top">
-                <h2 class="b1-h2">B1 - INTERMEDIATE</h2>
+                <h2 class="h2-animated b1-h2">
+                    <span class="text-wrapper-h2-animated">
+                        <span class="letters-h2-animated">B1 - INTERMEDIATE</span>
+                    </span>
+                </h2>
 
                 <div class="cards-wrap-b1">
 
@@ -1118,9 +1126,11 @@
             </div>
 
             <div class="b2" id="b2">
-                <div class="b2-h2">
-                    B2 - UPPER-INTERMEDIATE
-                </div>
+                <h2 class="h2-animated b2-h2">
+                    <span class="text-wrapper-h2-animated">
+                        <span class="letters-h2-animated">B2 - UPPER-INTERMEDIATE</span>
+                    </span>
+                </h2>
                 
                 <div class="cards-wrap-b2">
 
@@ -1444,7 +1454,7 @@
                 </p>
             </div>
             <div class="footer-contact">
-                <p class="footer-contact-rights">@2023 All rights reserved</p>
+                <p class="footer-contact-rights">@2024 All rights reserved</p>
                 <div class="footer-contact-socials">
                     <a href="mailto:skalijsofia2@gmail.com" target="_blank" class="footer-contact-socials-gmail">Gmail</a>
                     <a href="https://www.instagram.com/ebsjdo/" target="_blank" class="footer-contact-socials-instagram">Instagram</a>

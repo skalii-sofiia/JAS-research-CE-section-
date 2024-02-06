@@ -114,20 +114,83 @@ textWrapper1.innerHTML = textWrapper1.textContent.replace(/([^\x00-\x80]|\w)/g, 
 
 // for a1-beginner
 
-var textWrapper = document.querySelector('.h2-animated .letters-h2-animated');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter-h2-animated'>$&</span>");
+var textWrapper = document.querySelector('.a1-animated .letters-a1-animated');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter-a1-animated'>$&</span>");
 
 anime.timeline({loop: true})
   .add({
-    targets: '.h2-animated .letter-h2-animated',
+    targets: '.a1-animated .letter-a1-animated',
     scale: [0, 1],
     duration: 1500,
     elasticity: 600,
     delay: (el, i) => 45 * (i+1)
   }).add({
-    targets: '.h2-animated',
+    targets: '.a1-animated',
     opacity: 0,
     duration: 1000,
     easing: "easeOutExpo",
     delay: 1000
   });
+
+
+//for a2
+
+var textWrapper1 = document.querySelector('.a2-animated .letters-a2-animated');
+textWrapper1.innerHTML = textWrapper1.textContent.replace(/\S/g, "<span class='letter-a2-animated'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.a2-animated .letter-a2-animated',
+    scale: [0, 1],
+    duration: 1500,
+    elasticity: 600,
+    delay: (el, i) => 45 * (i+1)
+  }).add({
+    targets: '.a2-animated',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+  
+//for b1
+
+var textWrapper2 = document.querySelector('.b1-animated .letters-b1-animated');
+textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter-b1-animated'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.b1-animated .letter-b1-animated',
+    scale: [0, 1],
+    duration: 1500,
+    elasticity: 600,
+    delay: (el, i) => 45 * (i+1)
+  }).add({
+    targets: '.b1-animated',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+
+  //for b2
+
+  var textWrapper3 = document.querySelector('.b2-animated .letters-b2-animated');
+  textWrapper3.innerHTML = textWrapper3.textContent.replace(/\S/g, "<span class='letter-b2-animated'>$&</span>");
+  
+  anime.timeline({loop: true})
+    .add({
+      targets: '.b2-animated .letter-b2-animated',
+      scale: [0, 1],
+      duration: 1500,
+      elasticity: 600,
+      delay: (el, i) => 45 * (i+1)
+    }).add({
+      targets: '.b2-animated',
+      opacity: 0,
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 1000
+    });
